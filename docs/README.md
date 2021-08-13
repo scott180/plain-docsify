@@ -6,8 +6,8 @@
 | 仓库   | 地址                                               			      |  备注             			                 |
 | -----  | -------------------------------------------------------------      |  -----------------------------------         |
 | gitlab | [plain-docsify]( https://gitlab.com/xuyq123/plain-docsify ) &ensp; [网页]( https://xuyq123.gitlab.io/plain-docsify )             |  gitlab布署docsify：配置文件.gitlab-ci.yml。    |
-| github | [plain-docsify]( https://github.com/scott180/plain-docsify ) &ensp; [网页](  https://scott180.github.io/plain-docsify/ )   |  github布署mkdocs：命令mkdocs gh-deploy 。           |
-| gitee  | [plain-docsify]( https://gitee.com/xy180/plain-mkdocs ) &ensp; [网页1]( http://xy180.gitee.io/plain-mkdocs/1/site/ )       |  gitee布署mkdocs：mkdocs build 布署目录。    |
+| github | [plain-docsify]( https://github.com/scott180/plain-docsify ) &ensp; [网页](  https://scott180.github.io/plain-docsify/ )   |  GitHub Pages。           |
+| gitee  | [plain-mkdocs]( https://gitee.com/xy180/plain-mkdocs ) &ensp; [网页1]( http://xy180.gitee.io/plain-mkdocs/1/site/ )       |  Giteeb Pages。    |
 
 
 ### 笔记
