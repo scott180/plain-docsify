@@ -2,7 +2,7 @@
 *   [1、日常](#note)
 *   [2、工作](#wrok)
 *   [3、java](#java)
-*   [4、git仓库项目](#git)
+*   [4、git仓库](#gitId)
 
 
 - [ ] `仓库` &ensp; [gitlab]( https://gitlab.com/xuyq123/mynotes ) &ensp; [gitee]( https://gitee.com/xy180/MyNotes ) &ensp; [github]( https://github.com/scott180/MyNotes ) &ensp; [csdn_code]( https://codechina.csdn.net/xu180/MyNotes )  &ensp; [coding]( https://xyqin.coding.net/public/my/MyNotes/git/files ) &ensp; [bitbucket]( https://bitbucket.org/xu12345/mynotes )
@@ -16,7 +16,6 @@
 #### 1.1.1、windows常用快捷键
 
 ```
-
 windows常用快捷键
 
 Ctrl+C 复制选中内容
@@ -131,6 +130,7 @@ markdown转PDF文件分页
 
 markdown空格符号
 &ensp;
+&emsp;
 
 ```
 
@@ -143,7 +143,6 @@ gitlab mkdocs主题仓库
 	https://gitlab.com/xuyq123/plain-mkdocs   
 	https://xuyq123.gitlab.io/plain-mkdocs  
 	
-
 	
 git平台docsify布署markdown文件
 https://gitlab.com/xuyq123/mynotes/-/blob/master/git%E5%B9%B3%E5%8F%B0docsify%E5%B8%83%E7%BD%B2markdown%E6%96%87%E4%BB%B6.md 
@@ -878,12 +877,12 @@ maven常用打包命令
 
 ```
 
-*************************
+---
 
+<h2 id="gitId"></h2>
 
- <h2 id="git"></h2>
- 
 ## 4、git仓库
+
 
 ### 4.1、书法练习轨迹
 
