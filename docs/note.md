@@ -28,14 +28,13 @@ Ctrl+F 查找与替换
 Ctrl+W 关闭程序
 Ctrl+Z 撤消刚才进行的操作
 Ctrl+Y 恢复刚才进行的操作
-
 Ctrl+N 新建一个空白文档
 Ctrl+P 打开"打印"对话框
 Ctrl+O 打开文档
+
 Ctrl+Home  光标快速移到文件头
 Ctrl+End   光标快速移到文件尾
 Ctrl+Shift 输入法切换
-
 Alt+Tab	   程序切换
 
 Win     显示开始菜单
@@ -742,9 +741,9 @@ Project - Show Options Menu - Show Members
 ```
 eclipse & idea常用快捷键
 
-sout			打印
-Shift+Enter		另起一行
-Alt+Enter		快速命名
+sout            打印
+Shift+Enter     另起一行
+Alt+Enter       快速命名
 Ctrl+h          全局关键词搜索
 Ctrl+f          当前文件查找、替换
 Ctrl+shift+r    全局文件查找
@@ -757,13 +756,13 @@ Alt+shift+m     提取本地变量及方法
 
 ---
     
-Ctrl+Alt+↑        往上或下复制当前内容
-Alt+↓             将当前行的内容往上或下移动
-Alt+/        	  导入一个包
-Ctrl+m       	  编辑器窗口最大化
-Ctrl+o       	  快速outline，查找方法
-Ctrl+e	     	  快速转换编辑器
-syso+Alt+/        输出
+Ctrl+Alt+↑      往上或下复制当前内容
+Alt+↓           将当前行的内容往上或下移动
+Alt+/           导入一个包
+Ctrl+m          编辑器窗口最大化
+Ctrl+o          快速outline，查找方法
+Ctrl+e          快速转换编辑器
+syso+Alt+/      输出
 
 ```
 
