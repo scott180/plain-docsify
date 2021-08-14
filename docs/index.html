@@ -14,7 +14,22 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: 'https://gitlab.com/xuyq123/mynotes'
+      repo: 'https://gitlab.com/xuyq123/mynotes',
+	  plugins: [
+		function(hook) {
+		  var footer = [
+			'<hr/>',
+			'<footer>',
+			'<span><a href="./" target="_blank">笔记docsify</a>  note and calligraphy.</span>',
+			'<span> My git warehouse is <a href="https://gitlab.com/xuyq123/mynotes" target="_blank">MyNotes</a>.</span>',
+			'</footer>'
+		  ].join('');
+
+		  hook.afterEach(function(html) {
+			return html + footer;
+		  });
+		}
+	  ]
     }
   </script>
   <!-- Docsify v4 -->
