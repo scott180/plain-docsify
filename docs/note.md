@@ -26,7 +26,7 @@ Ctrl+X  剪切
 Ctrl+F  查找与替换
         
 Ctrl+W  关闭程序
-Ctrl+Z  撤消刚才进行的操作
+Ctrl+Z  撤销刚才进行的操作
 Ctrl+Y  恢复刚才进行的操作
 Ctrl+N  新建一个空白文档
 Ctrl+P  打开"打印"对话框
@@ -145,7 +145,10 @@ https://gitlab.com/xuyq123/mynotes/-/blob/master/gitlab%E3%80%81github%E3%80%81g
 
 gitlab mkdocs主题仓库   
 	https://gitlab.com/xuyq123/plain-mkdocs   
-	https://xuyq123.gitlab.io/plain-mkdocs  
+	https://xuyq123.gitlab.io/plain-mkdocs 
+
+	https://gitlab.com/xuyq123/myblog-mkdocs   
+	https://xuyq123.gitlab.io/myblog-mkdocs	
 	
 ---	
 	
@@ -155,6 +158,9 @@ https://gitlab.com/xuyq123/mynotes/-/blob/master/git%E5%B9%B3%E5%8F%B0docsify%E5
 gitlab docsify主题仓库 	
 	https://gitlab.com/xuyq123/plain-docsify 
 	https://xuyq123.gitlab.io/plain-docsify/
+	
+	https://gitlab.com/xuyq123/myblog-mkdocs
+	https://xuyq123.gitlab.io/myblog-docsify/	
 	
 ```
 
@@ -426,9 +432,32 @@ http://localhost:8080/druid/sql.html
 
 ### 3.1、java常用方法
 
+```
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ComboboxVO {}
+
+
+MessageResult result = JSON.parseObject(text, new TypeReference<MessageResult>() {});
+List<DiffRegionLogisticsDetailVO> cateList = JSON.parseObject(text, new TypeReference<List<DiffRegionLogisticsDetailVO>>() {});
+				
+				
+# 格式化全局时间
+spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
+spring.jackson.time-zone=GMT+8
+
+
+@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+private Date createTime;
+
+```
+
 #### 3.1.1、lambda表达式
 
 ```java
+
 /*** lambda表达式 */
 
 // 循环
@@ -671,6 +700,18 @@ Java 8 Stream peek 与 map的区别
 
 ```
 
+```java
+// 创建数组的四种方法
+int[] a1;
+int[] a2 = {1, 2, 3};
+int[] a3 = new int[]{1, 2, 3};
+
+int[] a4 = new int[3];
+a4[0] = 1;
+a4[2] = 2;
+a4[3] = 3;
+
+```
 
 ```java
 几个快速添加list的方法
@@ -680,6 +721,7 @@ Collections.addAll(s,"1","2","3")
 
 2. 使用Arrays.asList(...args) 直接返回一个List
 List<String> s = Arrays.asList("1","2","3")
+// 可能会抛异常 UnsupportOperationException
 
 3. 如果引入了Guava的工具包，可以使用他的Lists.newArrayList(...args)方法
 List<String> list = Lists.newArrayList("1","2","3")
@@ -687,6 +729,20 @@ List<String> list = Lists.newArrayList("1","2","3")
 4. 如果是Java9，可以使用自带的List类
 List<String> s = List.of("1","2","3")
 
+```
+
+```
+使用Arrays.asList()报错 UnsupportOperationException 原因
+
+常常使用Arrays.asLisvt()后调用add，remove这些method时出现java.lang.UnsupportedOperationException异常。这是由于：
+Arrays.asLisvt() 返回java.util.Arrays$ArrayList， 而不是ArrayList。
+
+Arrays$ArrayList和ArrayList都是继承AbstractList，remove，add等 method在AbstractList中是默认throw UnsupportedOperationException而且不作任何操作。
+ArrayList override这些method来对list进行操作，但是Arrays$ArrayList没有override remove(int)，add(int)等，所以throw UnsupportedOperationException。
+
+解决方法：
+List<String> list=new ArrayList(Arrays.asList(nameList));
+ 
 ```
 
 ---
@@ -953,10 +1009,21 @@ git平台：gitlab、github、gitee、csdn_code、coding、bitbucket
 | calligraphy-boot    | [gitlab]( https://gitlab.com/xuyq123/calligraphy-boot ) &ensp; [gitee]( https://gitee.com/xy180/calligraphy-boot ) &ensp; [github]( https://github.com/scott180/calligraphy-boot ) &ensp; [csdn_code]( https://codechina.csdn.net/xu180/calligraphy-boot )    |   java项目 |
 | calligraphy    | [gitlab]( https://gitlab.com/xuyq123/calligraphy ) &ensp; [gitee]( https://gitee.com/xy180/calligraphy ) &ensp; [github]( https://github.com/scott180/calligraphy ) &ensp; [gitlab_pages]( https://xuyq123.gitlab.io/plain/%E4%B9%A6%E6%B3%95%E7%BB%83%E4%B9%A0%E8%BD%A8%E8%BF%B9--%E6%98%8E%E6%9C%88%E5%87%A0%E6%97%B6%E6%9C%89.html ) &ensp; [gitlab_mkdocs]( https://xuyq123.gitlab.io/plain-mkdocs/ )    |   书法练习轨迹 |
 | mkdocs   | gitlab [note-mkdocs]( https://gitlab.com/xuyq123/note-mkdocs )&ensp; [**网页**](  https://xuyq123.gitlab.io/note-mkdocs/ ) &ensp;&ensp; [myblog-mkdocs]( https://gitlab.com/xuyq123/myblog-mkdocs )&ensp; [网页](  https://xuyq123.gitlab.io/myblog-mkdocs/ ) <br/>github [note-mkdocs]( https://github.com/scott180/note-mkdocs )&ensp; [网页](  https://scott180.github.io/note-mkdocs/ ) &ensp;&ensp;[myblog-mkdocs]( https://github.com/scott180/myblog-mkdocs )&ensp; [网页](  https://scott180.github.io/myblog-mkdocs/ )<br/>gitee [plain-mkdocs]( https://gitee.com/xy180/plain-mkdocs/tree/master/note ) [网页](  http://xy180.gitee.io/plain-mkdocs/note/site/ ) &ensp;&ensp;[myblog-mkdocs]( https://gitee.com/xy180/myblog-mkdocs )      |  我的笔记与博客                        |
-| docsify   | gitlab [plain-docsify]( https://gitlab.com/xuyq123/plain-docsify )&ensp; [**网页**](  https://xuyq123.gitlab.io/plain-docsify/ ) <br/>github [plain-docsify]( https://github.com/scott180/plain-docsify )&ensp; [网页](  https://scott180.github.io/plain-docsify/ ) |  笔记docsify                        |
+| docsify   | gitlab [plain-docsify]( https://gitlab.com/xuyq123/plain-docsify )&ensp; [**网页**](  https://xuyq123.gitlab.io/plain-docsify/ ) &ensp;&ensp; [myblog-docsify]( https://gitlab.com/xuyq123/myblog-docsify )&ensp; [网页](  https://xuyq123.gitlab.io/myblog-docsify/ ) <br/>github [plain-docsify]( https://github.com/scott180/plain-docsify )&ensp; [网页](  https://scott180.github.io/plain-docsify/ ) &ensp;&ensp;[myblog-docsify]( https://github.com/scott180/myblog-docsify )&ensp; [网页](  https://scott180.github.io/myblog-docsify/ )      |  笔记与博客docsify                        |
 
 ---
 
+---
+
+***
+
+> 注册了微信公众号及今日头条号：**无为徐生**，以后会将书法练习轨迹、程序员笔记以及一些随笔感想更新在此。若有兴趣，可扫码关注。
+
+| 无为徐生   | 今日头条号                                                	 |  &ensp; |  微信公众号        |
+| ---------  | ------------------------------------------------------------- |  -      |  ----------        |
+|  二维码    | ![t]( https://codechina.csdn.net/xu180/document/-/raw/master/imgs/toutiao/无为徐生.png ) | <br/> | ![w]( https://codechina.csdn.net/xu180/document/-/raw/master/imgs/weixin/无为徐生.png )  |
+
+***
 
 
 
