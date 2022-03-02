@@ -14,15 +14,12 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: 'https://gitlab.com/xuyq123/mynotes',
+      repo: 'https://gitlab.com/xuyq123/plain-docsify',
 	  plugins: [
 		function(hook) {
 		  var footer = [
 			'<hr/>',
-			'<footer>',
-			'<span><a href="./" target="_blank">笔记docsify</a>  note and calligraphy.</span>',
-			'<span> My git warehouse is <a href="https://gitlab.com/xuyq123/mynotes" target="_blank">MyNotes</a>.</span>',
-			'</footer>'
+			'<footer><b>Copyright (c) 2021 无为徐生 书法练习轨迹</b></footer>'
 		  ].join('');
 
 		  hook.afterEach(function(html) {
@@ -32,6 +29,7 @@
 	  ]
     }
   </script>
+  
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
